@@ -2,391 +2,616 @@
  "game": "Grand Theft Auto VI",
  "platform": "PlayStation 5",
  "list": "the official 55 trophies, 2026-11-18",
+ "sourcesNote": "Trophy names, descriptions and grades are the official PS5 list as published. The guide text for every trophy is original to Leonida Legend, reasoned from the official description alone. Where the description does not pin down a location, count detail or step, the guide says so plainly instead of inventing one.",
  "trophies": [
   {
    "id": 1,
    "name": "Vice Got a Price!",
    "description": "Congratulations! You're a Leonida Legend.",
    "grade": "platinum",
-   "guide": "Earn the other 54 trophies."
+   "kind": "completion",
+   "missable": false,
+   "stage": 7,
+   "guide": "This is the platinum itself, awarded automatically once the other fifty-four trophies are earned. There is nothing separate to hunt here: work the roadmap in order, clear the four missables before the finale, then finish the collectibles and grind stages. If this has not popped, use the checklist counts to find the one trophy still missing.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 2,
    "name": "Just Like Paradise",
    "description": "Complete Gone Fishing.",
    "grade": "bronze",
-   "guide": "Finish the opening mission, Gone Fishing."
+   "kind": "story",
+   "missable": false,
+   "stage": 1,
+   "guide": "Simply finish Gone Fishing, the opening mission named in the official description. Treat this first pass as your tutorial for movement, driving and combat, because mission replay for trophies is not confirmed. Nothing here needs preparation, collectibles or money, so play it naturally, learn the controls, and let the story carry you into Leonida.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 3,
    "name": "Paradise Lost",
    "description": "Complete Chapter 1.",
    "grade": "bronze",
-   "guide": "Finish Chapter 1."
+   "kind": "story",
+   "missable": false,
+   "stage": 1,
+   "guide": "Complete every required mission in Chapter 1 and this unlocks as the chapter closes. While you are learning the map, bank the easy early activities nearby rather than rushing past them. Mission replay for trophies is not confirmed, so handle any mission-specific action the story asks for on this first pass instead of assuming you can redo it later.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 4,
    "name": "T**s Ass Drug Money",
    "description": "Complete Chapter 2.",
    "grade": "bronze",
-   "guide": "Finish Chapter 2."
+   "kind": "story",
+   "missable": false,
+   "stage": 2,
+   "guide": "Finish all required missions in Chapter 2. By now the world should be opening up, so start noting activity types, shops and garages you pass for later completion work. Mission replay for trophies is not confirmed, so complete any one-off action a mission presents on the first pass, and keep a manual save before major story beats as cheap insurance.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 5,
    "name": "Vice City, Baby!",
    "description": "Complete Chapter 3.",
    "grade": "bronze",
-   "guide": "Finish Chapter 3."
+   "kind": "story",
+   "missable": false,
+   "stage": 2,
+   "guide": "Complete Chapter 3 in full. This is a good point to pause between story missions and sample each activity type once, which quietly advances a separate trophy. Mission replay for trophies is not confirmed, so treat set-piece moments as one-chance for any special action they offer, and keep rotating manual saves so a missed moment never costs the whole run.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 6,
    "name": "Top Of The World, Ma",
    "description": "Complete Chapter 4.",
    "grade": "bronze",
-   "guide": "Finish Chapter 4."
+   "kind": "story",
+   "missable": false,
+   "stage": 2,
+   "guide": "Finish Chapter 4, the last full chapter before the endgame stages of this roadmap. Before pushing further, clear any stranger strands you have opened and check the four missable trophies in this guide. Mission replay for trophies is not confirmed, so do mission-specific actions first time, and save manually before committing to the final stretch of the story.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 7,
    "name": "You Gotta Know When to Get Off",
    "description": "Complete the final mission.",
    "grade": "gold",
-   "guide": "Finish the final mission (gold)."
+   "kind": "story",
+   "missable": false,
+   "stage": 4,
+   "guide": "Complete the final mission to earn this gold trophy. Do not start it until the four missable trophies in Stage 4 are safely banked, because their one-chance moments sit before or around this point. Stock up, save manually in a separate slot, and go in prepared. Afterwards, free roam remains your home for collectibles, grinds and one hundred percent.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 8,
    "name": "Trust",
    "description": "Complete Breakfast Run.",
    "grade": "bronze",
-   "guide": "Finish the mission Breakfast Run."
+   "kind": "story",
+   "missable": false,
+   "stage": 2,
+   "guide": "Complete the named story mission Breakfast Run whenever it becomes available in the campaign. Follow its objectives through to the end rather than wandering off mid-mission. Mission replay for trophies is not confirmed, so if the mission presents a distinctive vehicle, route or action, engage with it fully on this first pass instead of planning to return later.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 9,
    "name": "Break the Bank",
    "description": "Complete The Cartel Heist.",
    "grade": "bronze",
-   "guide": "Finish the mission The Cartel Heist."
+   "kind": "story",
+   "missable": false,
+   "stage": 2,
+   "guide": "Complete The Cartel Heist, the named story mission in the official description. Heist-style missions reward preparation, so arrive with health, armour and suitable weapons topped up if the game allows it beforehand. Mission replay for trophies is not confirmed, so play any unique heist action carefully first time, and keep a pre-mission manual save as your safety net.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 10,
    "name": "Family Matters",
    "description": "Complete Child's Play.",
    "grade": "bronze",
-   "guide": "Finish the mission Child's Play."
+   "kind": "story",
+   "missable": false,
+   "stage": 2,
+   "guide": "Complete the named story mission Child's Play from start to finish. The official description gives no extra conditions, so no medal, timer or no-damage requirement should be assumed. Mission replay for trophies is not confirmed, so stay with the mission's own objectives and characters throughout, and avoid failing out at the final step by playing the closing section cautiously.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 11,
    "name": "DWNFALL",
    "description": "Complete Headliners.",
    "grade": "bronze",
-   "guide": "Finish the mission Headliners."
-  },
+   "kind": "story",
+   "missable": false,
+   "stage": 2,
+   "guide": "Complete Headliners, the named story mission. Simply seeing its credits moment is the requirement as published; no optional objective is stated. Mission replay for trophies is not confirmed, so treat anything distinctive the mission puts in your hands as worth experiencing fully now. A manual save before starting costs nothing and protects you if anything goes wrong mid-mission.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
+  }
+,
   {
    "id": 12,
    "name": "Hi-Jacked",
    "description": "Complete VCIA Takedown.",
    "grade": "bronze",
-   "guide": "Finish the mission VCIA Takedown."
+   "kind": "story",
+   "missable": false,
+   "stage": 2,
+   "guide": "Complete VCIA Takedown, the named story mission tied to the VCIA location that also features in a missable trophy elsewhere in this list. Finish the mission as directed, and note the area for later. Mission replay for trophies is not confirmed, so handle mission-specific actions on the first pass and keep a separate save beforehand.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 13,
    "name": "Snow Storm",
    "description": "Complete Operation Savage Glory.",
    "grade": "bronze",
-   "guide": "Finish the mission Operation Savage Glory."
+   "kind": "story",
+   "missable": false,
+   "stage": 2,
+   "guide": "Complete Operation Savage Glory, the named story mission. The official description adds no side conditions, so focus purely on finishing it. Mission replay for trophies is not confirmed, so if the operation hands you a special vehicle, weapon or escape route, use it as intended on this pass. Save manually before the mission marker to stay safe.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 14,
    "name": "A Long Road",
    "description": "Attain 100% Completion.",
    "grade": "gold",
-   "guide": "Reach 100% completion (gold)."
+   "kind": "completion",
+   "missable": false,
+   "stage": 7,
+   "guide": "Reach one hundred percent completion as tracked by the game itself. This is the long tail of the platinum: story, strands, activities, collectibles and exploration all feed it. Work it last, using the in-game completion checklist if one is provided, because the official trophy description does not list which individual tasks count toward the percentage. Chase the missing percent, not guesses.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 15,
    "name": "Cunning Stunts",
    "description": "Complete 250 Stunts.",
    "grade": "silver",
-   "guide": "Pull off 250 stunts (silver)."
+   "kind": "activities",
+   "missable": false,
+   "stage": 6,
+   "guide": "Complete two hundred and fifty stunts in total. This is a volume grind, so weave stunts into normal driving from early on instead of farming them all at the end. The official description does not say whether these are marked stunt jumps or any stunt the game registers, so follow the game's own stunt counter wherever it is displayed.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 16,
    "name": "Master of None",
    "description": "Try each type of activity once.",
    "grade": "bronze",
-   "guide": "Try all 9 activity types once."
+   "kind": "activities",
+   "missable": false,
+   "stage": 1,
+   "guide": "Try each type of activity once. The starter data notes nine activity types, so sample one of everything as activities unlock during Chapter 1 and beyond: a race, a range visit, an arcade game and so on. You only need a first attempt at each type, not a win, which makes this one of the cheapest early bankables in Leonida.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 17,
    "name": "The Shootist",
    "description": "Earn a gold medal in all Shooting Range challenges.",
    "grade": "silver",
-   "guide": "Gold all 42 Shooting Range challenges (silver)."
+   "kind": "activities",
+   "missable": false,
+   "stage": 6,
+   "guide": "Earn gold in every Shooting Range challenge; the starter data puts the total at forty-two challenges. Practise each weapon class until its scoring pattern feels routine, and replay challenges freely since ranges are built for repetition. The official description does not list per-challenge score targets, so read the target shown in game before each attempt and pace your shots accordingly.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 18,
    "name": "Top Fun",
    "description": "Win a Top Fun Drone Race at every location.",
    "grade": "bronze",
-   "guide": "Win a Top Fun drone race at all 14 locations."
+   "kind": "activities",
+   "missable": false,
+   "stage": 6,
+   "guide": "Win a Top Fun drone race at every location; the starter data counts fourteen locations. A win is required, not just participation, so learn each course with a sighting run first, then push for first place. The official description does not name the locations, so tick them off in this checklist as you discover and clear each one.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 19,
    "name": "Earn Cash, Not Kudos",
    "description": "Win 20 different races.",
    "grade": "bronze",
-   "guide": "Win 20 different races."
+   "kind": "activities",
+   "missable": false,
+   "stage": 6,
+   "guide": "Win twenty different races. The word different matters: repeating one easy race twenty times should not count, so keep moving to fresh events and mark each win here. Mix vehicle classes as new races unlock through the story. The official description does not specify race types, so any distinct race the game offers is worth winning once.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 20,
    "name": "Baited My Tackle",
    "description": "Beat Cal in a fishing challenge.",
    "grade": "bronze",
-   "guide": "Beat Cal in a fishing challenge."
+   "kind": "activities",
+   "missable": false,
+   "stage": 6,
+   "guide": "Beat Cal in a fishing challenge. Find the fishing challenge involving Cal, learn its scoring or catch rules on a first attempt, then win the rematch with better bait, timing or catch selection as the game allows. The official description does not state where Cal fishes or what wins the challenge, so read the challenge's own rules screen carefully before starting.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 21,
    "name": "Stick Fiddler",
    "description": "Complete an arcade game.",
    "grade": "bronze",
-   "guide": "Finish one arcade game."
+   "kind": "activities",
+   "missable": false,
+   "stage": 1,
+   "guide": "Complete one arcade game, start to finish. Any cabinet you find early will do, which is why this sits in Stage 1 as an easy bankable. Completion is the requirement as published, not a high score, so pick the shortest or simplest game on offer. The official description does not name arcade locations, so use the first one the story or free roam shows you.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 22,
    "name": "Road to Rehabilitation",
    "description": "Complete the final mission for Andy.",
    "grade": "bronze",
-   "guide": "Finish Andy's last mission."
-  },
+   "kind": "story",
+   "missable": false,
+   "stage": 3,
+   "guide": "Complete the final mission for Andy, meaning work through Andy's whole stranger strand until its concluding mission, not just the first meeting. Strands usually chain several encounters, so return whenever a new Andy marker appears. Mission replay for trophies is not confirmed, so finish each step properly on the first pass and keep the strand moving alongside the main story.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
+  }
+,
   {
    "id": 23,
    "name": "This Was No Boat Accident",
    "description": "Complete the final mission for Kenton.",
    "grade": "bronze",
-   "guide": "Finish Kenton's last mission."
+   "kind": "story",
+   "missable": false,
+   "stage": 3,
+   "guide": "Complete the final mission for Kenton by following Kenton's stranger strand through every encounter to its end. Do not mistake an early Kenton mission for the finale; the trophy needs the strand's last mission specifically. Mission replay for trophies is not confirmed, so complete each step as it comes and revisit the map whenever Kenton's next marker appears.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 24,
    "name": "The Lone Rider",
    "description": "Complete the final mission for Billy.",
    "grade": "bronze",
-   "guide": "Finish Billy's last mission."
+   "kind": "story",
+   "missable": false,
+   "stage": 3,
+   "guide": "Complete the final mission for Billy, the conclusion of Billy's stranger strand. Work each Billy encounter as it unlocks and keep returning until no new Billy mission appears, then finish the finale. Mission replay for trophies is not confirmed, so treat each strand step as a first-pass job. This also counts toward the eight completed strands silver trophy.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 25,
    "name": "Strangers & Freaks",
    "description": "Complete 8 mission strands for strangers across the state of Leonida.",
    "grade": "silver",
-   "guide": "Finish 8 stranger strands (silver)."
+   "kind": "story",
+   "missable": false,
+   "stage": 3,
+   "guide": "Complete eight full mission strands for strangers across Leonida. The named strands in this list, including Andy, Kenton, Billy, Randy and Tyrone, are the obvious core, so finish those first and then complete additional strands you meet until the count reaches eight. A strand only counts when its final mission is done, so track conclusions, not introductions, in this checklist.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 26,
    "name": "Supply & Demand",
    "description": "Complete the final mission for Randy.",
    "grade": "bronze",
-   "guide": "Finish Randy's last mission."
+   "kind": "story",
+   "missable": false,
+   "stage": 3,
+   "guide": "Complete the final mission for Randy by playing Randy's stranger strand through to its conclusion. Keep checking back after each Randy encounter, since strand steps often unlock with time or story progress. Mission replay for trophies is not confirmed, so finish each step cleanly first time. Completing this strand also moves the eight-strands silver trophy one step closer.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 27,
    "name": "Spin On This!",
    "description": "Complete the final mission for Tyrone.",
    "grade": "bronze",
-   "guide": "Finish Tyrone's last mission."
+   "kind": "story",
+   "missable": false,
+   "stage": 3,
+   "guide": "Complete the final mission for Tyrone, closing out Tyrone's stranger strand in full. Follow the strand from its first encounter to the finale rather than stopping after an early mission. Mission replay for trophies is not confirmed, so handle each step on the first pass. Together with the other named strands, this helps complete the eight-strands requirement for silver.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 28,
    "name": "Positive Mental Attitude",
    "description": "Meditate at every spot across Leonida.",
    "grade": "bronze",
-   "guide": "Meditate at all 18 spots."
+   "kind": "collectibles",
+   "missable": false,
+   "stage": 5,
+   "guide": "Meditate at every meditation spot across Leonida; the starter data counts eighteen spots. This is a pure sweep: visit each spot once and use it. The official description does not list the spots, so mark each one off here as you find it during exploration, and combine the hunt with area discovery so no region gets visited twice unnecessarily.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 29,
    "name": "Fair Game",
    "description": "Hunt a unique animal for Bret.",
    "grade": "bronze",
-   "guide": "Hunt the unique animal for Bret."
+   "kind": "activities",
+   "missable": false,
+   "stage": 6,
+   "guide": "Hunt the unique animal for Bret. Start Bret's hunting activity, follow its tracking steps, and bring down the specific unique animal it names rather than ordinary wildlife. The official description does not say which animal or where it lives, so rely on Bret's own briefing in game, prepare suitable weapons and transport, and save before the hunt begins.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 30,
    "name": "Don't Touch My Deck",
    "description": "Complete 3 Collectible Card sets.",
    "grade": "silver",
-   "guide": "Complete 3 collectible card sets (silver)."
+   "kind": "collectibles",
+   "missable": false,
+   "stage": 5,
+   "guide": "Complete three full Collectible Card sets. Cards are found across Leonida, so pick them up whenever the game highlights one and keep set progress visible in this checklist. The official description does not say how many cards make a set or where they hide, so prioritise finishing nearly-complete sets first; three completed sets are needed, not every card in the game.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 31,
    "name": "You WAiNKer!",
    "description": "WAiNK It at 100 locations.",
    "grade": "silver",
-   "guide": "WAiNK It at 100 locations (silver)."
+   "kind": "collectibles",
+   "missable": false,
+   "stage": 5,
+   "guide": "Use the WAiNK It action at one hundred different locations. Treat this as a statewide sweep alongside exploration and the other collectibles: whenever you enter a new area, do it once there. The official description does not define the action or list locations, so follow how the game itself introduces WAiNK It and trust its counter to confirm progress.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 32,
    "name": "One Last Thing",
    "description": "Complete 50 Challenges.",
    "grade": "bronze",
-   "guide": "Finish 50 challenges."
+   "kind": "activities",
+   "missable": false,
+   "stage": 6,
+   "guide": "Complete fifty challenges in total. Challenges accumulate naturally if you accept them as they appear during story, strands and free roam, so start early and the count should finish during the grind stage. The official description does not define which challenge types qualify, so take any challenge the game formally offers and let its own completion tracking be the judge.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 33,
    "name": "Hot Together",
    "description": "Lose a 4 star Wanted Level with your partner and escape the heat.",
    "grade": "bronze",
-   "guide": "Lose a 4-star wanted level with your partner."
-  },
+   "kind": "activities",
+   "missable": false,
+   "stage": 6,
+   "guide": "While with your partner, build a four-star wanted level, then lose it completely and escape the heat. Plan the escape before raising the stars: know a quiet area, tunnels or a vehicle swap to break line of sight. The official description does not name a method, so the reliable approach is distance, cover and patience until the search ends.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
+  }
+,
   {
    "id": 34,
    "name": "Retail Therapy",
    "description": "Rob 3 shops back-to-back with your partner without losing your Wanted Level.",
    "grade": "bronze",
-   "guide": "Rob 3 shops in a row with your partner, keeping your wanted level."
+   "kind": "activities",
+   "missable": false,
+   "stage": 6,
+   "guide": "With your partner, rob three shops back-to-back without losing your wanted level in between. Pick three shops close together, keep moving between them, and never let the police search fully expire until the third robbery is done. The official description does not name shops, so scout a tight cluster first and rehearse the route before committing to the run.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 35,
    "name": "Whip It Good",
    "description": "Discover 100 vehicles.",
    "grade": "bronze",
-   "guide": "Discover 100 vehicles."
+   "kind": "collectibles",
+   "missable": false,
+   "stage": 5,
+   "guide": "Discover one hundred different vehicles. Discovery normally registers when you first enter or encounter a vehicle model, so make a habit of hopping into unfamiliar cars, bikes and boats as you explore richer and poorer districts alike. The official description does not define discovery precisely, so vary vehicle types and areas, and watch the game's own count if it shows one.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 36,
    "name": "Gunslinger",
    "description": "Take down 5 enemies in a single use of Combat Focus.",
    "grade": "bronze",
-   "guide": "Down 5 enemies in one Combat Focus."
+   "kind": "activities",
+   "missable": false,
+   "stage": 6,
+   "guide": "Take down five enemies during a single use of Combat Focus. Set the moment up deliberately: gather a group of five or more enemies, position with clear sightlines, then trigger Combat Focus and work through them before it ends. The official description does not explain the ability's limits, so learn its duration in a safe fight before attempting a crowded one.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 37,
    "name": "Catch Me If You Can",
    "description": "Make an unscheduled departure at VCIA.",
    "grade": "bronze",
-   "guide": "Leave VCIA in an unscheduled way."
+   "kind": "activities",
+   "missable": true,
+   "stage": 4,
+   "guide": "MISSABLE: make an unscheduled departure at VCIA when the story puts you there. The official description ties this to the VCIA beat also seen in the VCIA Takedown mission, so treat that story window as one-chance: save before it, and when the moment comes, leave in the unscheduled way the scene allows instead of following the normal exit. Do not advance past it unprepared.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 38,
    "name": "Challenging Tank",
    "description": "Kinda hot in these Rhinos.",
    "grade": "bronze",
-   "guide": "Deal with Rhinos (tanks)."
+   "kind": "activities",
+   "missable": false,
+   "stage": 6,
+   "guide": "This cryptic description points at Rhinos, the series' tanks: get involved with a Rhino when one appears, most plausibly by taking or surviving one during a high-heat encounter. The official description gives no explicit action or count, so this guide cannot honestly be more specific; when a Rhino shows up in play, engage with it and see what the game registers.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 39,
    "name": "Sneakthief",
    "description": "Rob a jewelry store without being detected.",
    "grade": "bronze",
-   "guide": "Rob a jewelry store without being seen."
+   "kind": "activities",
+   "missable": false,
+   "stage": 6,
+   "guide": "Rob a jewelry store without being detected. Preparation is everything: approach quietly, avoid cameras, alarms and witnesses as the game's stealth rules define them, and plan a silent exit before you start. The official description does not name a store or method, so scout the store's layout in advance and restart the attempt if detection happens before the robbery completes.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 40,
    "name": "Maximum Withdrawal",
    "description": "Rob 5 Bank Vaults and escape.",
    "grade": "silver",
-   "guide": "Rob 5 bank vaults and escape (silver)."
+   "kind": "activities",
+   "missable": false,
+   "stage": 6,
+   "guide": "Rob five bank vaults and escape after each one; a robbery without a clean escape should not be assumed to count. Treat each vault as a mini-heist: enter prepared, grab the money, and lose the heat fully before starting the next. The official description does not list vault locations, so note each bank you find while exploring and return systematically.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 41,
    "name": "A Classic Blitz Play",
    "description": "Rob an Armored Truck and escape.",
    "grade": "bronze",
-   "guide": "Rob an armored truck and escape."
+   "kind": "activities",
+   "missable": false,
+   "stage": 6,
+   "guide": "Rob an armored truck and escape. When you spot one, disable or open it by whatever means the game provides, take the money, and then fully lose any wanted level. The official description does not explain how trucks spawn or open, so stay alert for them in free roam, act decisively when one appears, and prioritise the escape over extra loot.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 42,
    "name": "The Goodtime State",
    "description": "Explore all of Leonida.",
    "grade": "bronze",
-   "guide": "Explore all 52 areas of Leonida."
+   "kind": "collectibles",
+   "missable": false,
+   "stage": 5,
+   "guide": "Explore all of Leonida; the starter data counts fifty-two areas. Ride or drive through every district, island and backwater until each area registers as discovered. Pair this sweep with meditation spots, cards and vehicle discovery so one long tour advances several trophies at once. The official description does not list the areas, so use the in-game map's uncovered regions as your guide.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 43,
    "name": "Pest Control",
    "description": "Rob an Illegal Operation belonging to each gang.",
    "grade": "bronze",
-   "guide": "Rob one illegal operation of each of the 9 gangs."
+   "kind": "activities",
+   "missable": false,
+   "stage": 6,
+   "guide": "Rob an illegal operation belonging to each gang; the starter data counts nine gangs. One robbery per gang is the requirement, so variety matters more than volume: identify which gang owns each operation before hitting it, and keep a written tally here. The official description does not name the gangs or locations, so let in-game ownership markers guide your targeting.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 44,
    "name": "In The Beginning…",
    "description": "Enjoy a cocktail with a view on Ocean Beach.",
    "grade": "bronze",
-   "guide": "Have a cocktail with a view on Ocean Beach."
-  },
+   "kind": "activities",
+   "missable": false,
+   "stage": 1,
+   "guide": "Enjoy a cocktail with a view on Ocean Beach. Head to Ocean Beach, find the bar or cocktail prompt the location offers, and use it while taking in the view. That is the whole trophy as published, and it costs only a drink, which is why this guide banks it in Stage 1. The official description names the beach but no specific bar.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
+  }
+,
   {
    "id": 45,
    "name": "Capital Offense",
    "description": "Smash your way out of a vehicle showroom in classic style.",
    "grade": "bronze",
-   "guide": "Smash out of a vehicle showroom in style."
+   "kind": "activities",
+   "missable": true,
+   "stage": 4,
+   "guide": "MISSABLE: smash your way out of a vehicle showroom in classic style. This reads as a one-off set-piece rather than a repeatable free-roam action, so when a story scene places you inside a showroom with a vehicle, drive out through the glass instead of looking for a door. Save beforehand in the story, because if the scene passes normally, the chance may be gone.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 46,
    "name": "Let’s Go Bowling",
    "description": "Follow-through at the Kolt & Associates' bowling alley.",
    "grade": "bronze",
-   "guide": "Play bowling at the Kolt & Associates alley."
+   "kind": "activities",
+   "missable": false,
+   "stage": 6,
+   "guide": "Visit the Kolt and Associates bowling alley named in the official description and complete its follow-through action there, most naturally by actually bowling a game or the alley's prompted activity. The description is playful rather than precise, so this guide will not invent a score target: go to the named alley, use what it offers, and the trophy should register.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 47,
    "name": "Personal Best",
    "description": "A partnership with mass appeal.",
    "grade": "bronze",
-   "guide": "A partnership moment with mass appeal."
+   "kind": "activities",
+   "missable": false,
+   "stage": 6,
+   "guide": "The official description, a partnership with mass appeal, is deliberately vague and names no action, place or count. Honest advice is therefore limited: it most plausibly involves an activity done together with your partner that draws attention or a crowd. Try partner activities as they unlock, and if you discover its exact trigger in play, this trophy needs no grinding beyond that moment.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 48,
    "name": "Actions Speak Louder",
    "description": "Choices made (for better or worse).",
    "grade": "bronze",
-   "guide": "Make choices (PSN tracks a count to 500)."
+   "kind": "activities",
+   "missable": true,
+   "stage": 4,
+   "guide": "MISSABLE: this trophy is about choices made, for better or worse, and the starter data notes PSN tracks a count toward five hundred. Choices in a story cannot be unmade, so engage with decision moments deliberately as they appear rather than skipping through them. Save before major choices where the game allows, and keep playing naturally; the count should build across the campaign if you participate.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 49,
    "name": "Bad Luck, I Guess",
    "description": "Second time's the charm.",
    "grade": "bronze",
-   "guide": "Succeed on a second try."
+   "kind": "activities",
+   "missable": true,
+   "stage": 4,
+   "guide": "MISSABLE: second time's the charm implies a first attempt that can be failed, then a second attempt that must succeed. The official description does not name the activity, so stay alert for any retry-based moment the story or an activity offers, save before first attempts at unique challenges, and make the second try count. If a one-chance retry passes you by, it may not return.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 50,
    "name": "The Truth Is Out There",
    "description": "What the hell just happened?",
    "grade": "bronze",
-   "guide": "Witness something strange."
+   "kind": "activities",
+   "missable": false,
+   "stage": 6,
+   "guide": "This trophy hides behind a reaction, not instructions: something strange happens, and you witness it. Series tradition suggests an oddball encounter or Easter egg event, but the official description names no place, time or trigger, so no honest step-by-step exists yet. Explore off the beaten path, investigate unusual sights and strangers, and keep this marked as a discovery trophy, not a grind.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 51,
    "name": "Ten Pin",
    "description": "Bowl 'em over with a melee drive-by.",
    "grade": "bronze",
-   "guide": "Knock someone down with a melee drive-by."
+   "kind": "activities",
+   "missable": false,
+   "stage": 6,
+   "guide": "Knock someone down with a melee drive-by: from a moving vehicle, strike a pedestrian or enemy with a melee attack as you pass, bowling them over. Find a slow, safe street, line up a single target, and time the swing as you pass. The official description does not require a kill or a specific vehicle, so a clean knockdown should be enough.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 52,
    "name": "Dime on the Dollar",
    "description": "Earn $250,000 laundering Marked Bills through your contacts.",
    "grade": "bronze",
-   "guide": "Launder $250,000 of marked bills."
+   "kind": "activities",
+   "missable": false,
+   "stage": 6,
+   "guide": "Earn two hundred and fifty thousand dollars by laundering Marked Bills through your contacts. This is an economy grind: acquire marked bills through the criminal activities that produce them, then repeatedly pass them to your contacts until the cumulative laundered total reaches the target. The official description does not detail the loop's steps, so follow the in-game prompts for laundering whenever bills are in hand.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 53,
    "name": "Treat Yo Self",
    "description": "Spend $100,000 across all shops.",
    "grade": "bronze",
-   "guide": "Spend $100,000 in shops."
+   "kind": "activities",
+   "missable": false,
+   "stage": 6,
+   "guide": "Spend one hundred thousand dollars across all shops in total. Normal play gets much of this done: vehicles services, weapons, clothing, food and property-adjacent purchases should all chip away at it. Do not waste money early just for this; let spending accumulate, then top it up late in the grind stage when your income from robberies and laundering makes the remainder painless.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 54,
    "name": "Little Boxes",
    "description": "Purchase all garage properties.",
    "grade": "bronze",
-   "guide": "Buy all 8 garage properties."
+   "kind": "collectibles",
+   "missable": false,
+   "stage": 5,
+   "guide": "Purchase all garage properties; the starter data counts eight garages. Save income from story, robberies and activities until you can buy them one by one, cheapest first if prices vary. The official description does not list locations or prices, so note each garage for sale as you explore Leonida, and buy the final one as soon as your bank balance comfortably allows.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   },
   {
    "id": 55,
    "name": "On the Spot",
    "description": "Register 10 vehicles to the Scooter Bros app.",
    "grade": "bronze",
-   "guide": "Register 10 vehicles in the Scooter Bros app."
+   "kind": "collectibles",
+   "missable": false,
+   "stage": 5,
+   "guide": "Register ten vehicles to the Scooter Bros app. Whenever you acquire or find a vehicle worth keeping, register it through the app as the game prompts, and repeat until ten are registered. The official description does not explain eligibility rules, so if a vehicle cannot be registered, simply try the next one; ten successful registrations is the only target that matters here.",
+   "sources": [{"label": "Official PS5 trophy list, as published", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"}, {"label": "PSNProfiles trophy page (grades and PSN targets)", "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"}]
   }
  ]
 }
