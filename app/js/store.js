@@ -1,85 +1,122 @@
-// Leonida Legend — progress store.
-// Progress lives only in this browser, in localStorage under one key.
-// Shape: { "earned": [trophyId, ...], "spoiler": true|false, "selected": trophyId|null }
+// store.js — progress persistence for the Leonida Legend tracker.
+//
+// Everything the tracker remembers lives under one localStorage key as a
+// small JSON document: which trophies are earned (by official name) and
+// whether spoiler-safe mode is on. Nothing leaves the browser except when
+// the reader explicitly exports a progress file or imports one back.
 
 export const STORAGE_KEY = "leonida-legend-progress-v1";
+export const EXPORT_FORMAT = "leonida-legend-progress";
 
-const DEFAULT_STATE = { earned: [], spoiler: true, selected: null };
+export function emptyProgress() {
+  return { earned: {}, spoilerSafe: false };
+}
 
-export function loadState() {
+export function loadProgress() {
   try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    if (!raw) return { ...DEFAULT_STATE };
+    const raw = window.localStorage.getItem(STORAGE_KEY);
+    if (!raw) return emptyProgress();
     const parsed = JSON.parse(raw);
-    return {
-      earned: Array.isArray(parsed.earned) ? parsed.earned.filter((n) => Number.isInteger(n)) : [],
-      spoiler: typeof parsed.spoiler === "boolean" ? parsed.spoiler : true,
-      selected: Number.isInteger(parsed.selected) ? parsed.selected : null,
-    };
+    if (!parsed || typeof parsed !== "object") return emptyProgress();
+    const earned = {};
+    if (parsed.earned && typeof parsed.earned === "object") {
+      for (const [name, flag] of Object.entries(parsed.earned)) {
+        if (flag === true) earned[name] = true;
+      }
+    }
+    return { earned, spoilerSafe: parsed.spoilerSafe === true };
   } catch {
-    return { ...DEFAULT_STATE };
+    return emptyProgress();
   }
 }
 
-export function saveState(state) {
+export function saveProgress(progress) {
   try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
   } catch {
-    // Storage can be unavailable (private mode, file quotas). The guide still works for the session.
+    // Storage can be unavailable (private mode, quota). The tracker keeps
+    // working in memory; the header simply will not persist between visits.
   }
 }
 
-export function isEarned(state, id) {
-  return state.earned.includes(id);
+export function isEarned(progress, trophyName) {
+  return progress.earned[trophyName] === true;
 }
 
-export function toggleEarned(state, id) {
-  state.earned = isEarned(state, id)
-    ? state.earned.filter((n) => n !== id)
-    : [...state.earned, id].sort((a, b) => a - b);
-  saveState(state);
-  return state;
+export function setEarned(progress, trophyName, earned) {
+  if (earned) {
+    progress.earned[trophyName] = true;
+  } else {
+    delete progress.earned[trophyName];
+  }
+  saveProgress(progress);
+  return progress;
 }
 
-export function setSpoiler(state, on) {
-  state.spoiler = Boolean(on);
-  saveState(state);
-  return state;
+export function earnedCount(progress) {
+  return Object.keys(progress.earned).length;
 }
 
-export function setSelected(state, id) {
-  state.selected = id;
-  saveState(state);
-  return state;
-}
-
-// Export: download the current progress as a small JSON file the user keeps.
-export function exportProgress(state) {
-  const payload = {
-    app: "leonida-legend",
+export function buildExport(progress, totalTrophies) {
+  return {
+    format: EXPORT_FORMAT,
     version: 1,
+    game: "Grand Theft Auto VI",
+    platform: "PlayStation 5",
+    totalTrophies,
+    earnedCount: earnedCount(progress),
     exportedAt: new Date().toISOString(),
-    earned: [...state.earned].sort((a, b) => a - b),
-    spoiler: state.spoiler,
+    spoilerSafe: progress.spoilerSafe === true,
+    earned: Object.keys(progress.earned).sort(),
   };
+}
+
+export function downloadExport(progress, totalTrophies) {
+  const payload = buildExport(progress, totalTrophies);
   const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
   const url = URL.createObjectURL(blob);
-  const a = document.createElement("a");
-  a.href = url;
-  a.download = "leonida-legend-progress.json";
-  document.body.appendChild(a);
-  a.click();
-  a.remove();
-  setTimeout(() => URL.revokeObjectURL(url), 1000);
+  const anchor = document.createElement("a");
+  anchor.href = url;
+  anchor.download = "leonida-legend-progress.json";
+  document.body.appendChild(anchor);
+  anchor.click();
+  anchor.remove();
+  window.setTimeout(() => URL.revokeObjectURL(url), 1000);
   return payload;
 }
 
-// Import: parse a previously exported file. Returns a clean earned-id list,
-// or throws with a human-readable reason.
-export function parseImport(text, validIds) {
-  const data = JSON.parse(text);
-  const list = Array.isArray(data) ? data : data.earned;
-  if (!Array.isArray(list)) throw new Error("That file does not contain an earned list.");
-  const clean = list.filter((n) => Number.isInteger(n) && validIds.has(n));
-  return [...new Set(clean)].sort((a, b) => a - b);
+export function parseImport(text, knownNames) {
+  const parsed = JSON.parse(text);
+  if (!parsed || typeof parsed !== "object") {
+    throw new Error("That file is not a progress file.");
+  }
+  let names = [];
+  if (Array.isArray(parsed.earned)) {
+    names = parsed.earned;
+  } else if (parsed.earned && typeof parsed.earned === "object") {
+    names = Object.keys(parsed.earned).filter((name) => parsed.earned[name] === true);
+  } else if (Array.isArray(parsed.trophies)) {
+    names = parsed.trophies;
+  } else {
+    throw new Error("No earned-trophy list found in that file.");
+  }
+  const known = new Set(knownNames);
+  const earned = {};
+  let ignored = 0;
+  for (const name of names) {
+    if (typeof name === "string" && known.has(name)) {
+      earned[name] = true;
+    } else {
+      ignored += 1;
+    }
+  }
+  return {
+    progress: { earned, spoilerSafe: parsed.spoilerSafe === true },
+    imported: Object.keys(earned).length,
+    ignored,
+  };
+}
+
+export function readImportFile(file, knownNames) {
+  return file.text().then((text) => parseImport(text, knownNames));
 }

@@ -3,97 +3,73 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Leonida Legend — GTA VI Trophy Guide</title>
+<title>Leonida Legend — GTA VI Trophy Guide &amp; Tracker (PS5)</title>
+<meta name="description" content="Offline guide and tracker for all 55 Grand Theft Auto VI PlayStation 5 trophies: cited guides, a platinum roadmap, missable flags, filters, spoiler-safe mode and exportable progress.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="site-header">
-  <div class="header-inner">
-    <div>
-      <p class="kicker">Grand Theft Auto VI · PlayStation 5 · Offline Trophy Guide</p>
-      <h1>Leonida Legend</h1>
-      <p class="tagline">All 55 official trophies — a roadmap to the platinum, honest missable warnings, and a guide for every trophy in our own words.</p>
-    </div>
-    <div class="progress-card" aria-label="Overall progress">
-      <p class="big-count"><span id="earned-count">0</span> <span class="of">of 55</span></p>
-      <p class="progress-label">trophies earned</p>
-      <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="55" aria-valuenow="0" id="progress-bar-wrap"><div class="bar-fill" id="progress-bar"></div></div>
-      <p class="progress-pct" id="progress-pct">0%</p>
+<header class="topbar">
+  <div class="topbar-inner">
+    <p class="kicker">Grand Theft Auto VI · PlayStation 5 · Offline guide &amp; tracker</p>
+    <h1>Leonida Legend</h1>
+    <p class="tagline">Every one of the 55 official trophies — with a guide in our own words, its sources, a roadmap to the platinum, and the five missables flagged before they can slip away.</p>
+    <div class="progress-wrap">
+      <p id="progressText" class="progress-text">0 of 55 trophies earned · 0%</p>
+      <div class="progress-track"><div id="progressBar" class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div></div>
+      <p id="gradeBreakdown" class="grade-breakdown">Official list: 1 platinum · 2 gold · 6 silver · 46 bronze · 28 hidden on PSN</p>
     </div>
   </div>
 </header>
 
-<nav class="tabs" aria-label="Guide views">
-  <button type="button" class="tab active" data-tab="checklist">Checklist</button>
-  <button type="button" class="tab" data-tab="roadmap">Roadmap</button>
-  <button type="button" class="tab" data-tab="missables">Missables</button>
-  <button type="button" class="tab" data-tab="about">About</button>
-</nav>
+<section class="controls" aria-label="Tracker controls">
+  <div id="kindChips" class="kind-chips" role="group" aria-label="Filter by kind"></div>
+  <div class="control-row">
+    <label class="control">Grade
+      <select id="gradeFilter">
+        <option value="all">All grades</option>
+        <option value="platinum">Platinum</option>
+        <option value="gold">Gold</option>
+        <option value="silver">Silver</option>
+        <option value="bronze">Bronze</option>
+      </select>
+    </label>
+    <label class="control control-grow">Search
+      <input id="searchInput" type="search" placeholder="Search names, descriptions, guides…" autocomplete="off">
+    </label>
+    <label class="control check-control"><input id="earnedOnlyToggle" type="checkbox"> Earned only</label>
+    <label class="control check-control"><input id="spoilerToggle" type="checkbox"> Spoiler-safe: hide story trophies until earned</label>
+  </div>
+  <div class="control-row">
+    <button id="exportButton" type="button">Export progress</button>
+    <button id="importButton" type="button">Import progress</button>
+    <input id="importInput" type="file" accept="application/json,.json" hidden>
+    <button id="resetButton" type="button" class="danger">Reset progress</button>
+    <p id="statusLine" class="status-line" role="status">Progress is saved in this browser (localStorage) and can be exported to a file.</p>
+  </div>
+  <p id="resultCount" class="result-count"></p>
+  <p id="onlineNote" class="online-note" hidden>The official PS5 list has no online trophies: the partner trophies (Hot Together, Retail Therapy) are story-mode co-op, so this filter honestly matches nothing rather than inventing entries.</p>
+</section>
 
-<main>
-  <section id="view-checklist" class="view">
-    <div class="controls">
-      <label class="control grow">Search
-        <input id="search" type="search" placeholder="Search name or description…">
-      </label>
-      <label class="control">Kind
-        <select id="kind-filter">
-          <option value="all">All</option>
-          <option value="story">Story</option>
-          <option value="missable">Missable</option>
-          <option value="collectibles">Collectibles</option>
-          <option value="activities">Activities</option>
-          <option value="completion">Completion</option>
-          <option value="online">Online</option>
-        </select>
-      </label>
-      <label class="control">Grade
-        <select id="grade-filter">
-          <option value="all">All</option>
-          <option value="platinum">Platinum</option>
-          <option value="gold">Gold</option>
-          <option value="silver">Silver</option>
-          <option value="bronze">Bronze</option>
-        </select>
-      </label>
-      <label class="control toggle">
-        <input id="spoiler-toggle" type="checkbox" checked>
-        <span>Spoiler protection</span>
-      </label>
-      <button id="export-btn" type="button" class="btn">Export progress</button>
-      <label class="btn file-btn">Import progress
-        <input id="import-input" type="file" accept="application/json" hidden>
-      </label>
-    </div>
-    <p id="list-status" class="status" role="status"></p>
-    <div class="two-pane">
-      <div id="trophy-list" class="trophy-list"></div>
-      <aside id="detail-pane" class="detail-pane" aria-label="Trophy detail"></aside>
-    </div>
+<main class="layout">
+  <section class="list-panel" aria-label="Trophy checklist">
+    <h2 class="panel-title">Trophy checklist — official names, descriptions &amp; grades</h2>
+    <ul id="trophyList" class="trophy-list"></ul>
   </section>
-
-  <section id="view-roadmap" class="view" hidden>
-    <h2>Roadmap to the Platinum</h2>
-    <p class="lede">Seven stages, in the order this guide recommends playing them. Finish each stage's trophies before moving on — Stage 4 exists so the four missables are banked before the final mission.</p>
-    <div id="roadmap-list"></div>
-  </section>
-
-  <section id="view-missables" class="view" hidden>
-    <h2>Missable Trophies</h2>
-    <p class="lede">Only four of the 55 trophies meet this guide's strict missable standard: the official description itself implies a one-chance moment. Everything else can be cleaned up in free roam — but note that mission replay for trophies is not confirmed, so this guide still advises doing mission-specific actions on the first pass.</p>
-    <div id="missables-list"></div>
-  </section>
-
-  <section id="view-about" class="view" hidden>
-    <h2>About Leonida Legend</h2>
-    <div id="about-content"></div>
-  </section>
+  <aside id="detailPane" class="detail-pane" aria-label="Trophy guide"></aside>
 </main>
 
-<footer>
-  <p>Leonida Legend is an unofficial, offline fan guide. Trophy names, descriptions and grades are the official PS5 list as published; all guide advice is original to this guide. No game artwork or logos are used.</p>
-</footer>
+<section id="missableBox" class="missable-box" aria-label="Missable trophies"></section>
 
+<section class="roadmap-box" aria-label="Roadmap to the platinum">
+  <h2>Roadmap to the platinum</h2>
+  <p class="roadmap-intro">Seven stages, built from the official descriptions: story first, missables before the point of no return, then strangers, activities, collectibles and the money game — until 100% completion hands you the second gold and the platinum follows on its own.</p>
+  <div id="roadmapBox"></div>
+</section>
+
+<footer class="footer">
+  <p><strong>Sources.</strong> Trophy names, descriptions and grades are the official PlayStation list, as published by Exophase and PSNProfiles (the two agree on all 55, including counts such as 42 Shooting Range challenges, 14 Top Fun locations, 52 areas of Leonida and 8 garage properties). Every guide here is written in our own words from those official descriptions, and each trophy's detail pane names its sources again. Where an official description is a riddle, the guide says so and labels its reading as ours.</p>
+  <p><strong>Offline by design.</strong> This page loads only files inside its own folder and works with the network off. No Rockstar Games logo, artwork or game screenshots are used — the look is our own Leonida sunset.</p>
+</footer>
 <script type="module" src="js/main.js"></script>
 </body>
 </html>

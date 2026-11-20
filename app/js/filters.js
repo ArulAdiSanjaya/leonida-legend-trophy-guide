@@ -1,56 +1,82 @@
-// Leonida Legend — filtering and the spoiler rule.
+// filters.js — pure filtering and counting for the trophy checklist.
+//
+// The filter bar offers kinds (story, missable, collectibles, activities,
+// online), grades, an earned/unearned switch and free-text search. The
+// official PS5 list contains no online trophies — the partner trophies are
+// story-mode co-op — so the online filter honestly matches nothing and the
+// UI says so instead of inventing entries.
 
-export const KIND_LABELS = {
-  story: "Story",
-  collectibles: "Collectibles",
-  activities: "Activities",
-  completion: "Completion",
-  online: "Online",
-};
-
-export const STAGES = [
-  { n: 1, title: "Touchdown in Leonida", blurb: "The opening, Chapter 1, and the cheap early bankables: sample every activity type, finish an arcade game, and take that Ocean Beach cocktail." },
-  { n: 2, title: "The Story: Chapters 2–4", blurb: "Play Chapters 2, 3 and 4 plus the named story missions — Breakfast Run, The Cartel Heist, Child's Play, Headliners, VCIA Takedown and Operation Savage Glory." },
-  { n: 3, title: "Strangers of Leonida", blurb: "Close out the stranger strands: the finals for Andy, Kenton, Billy, Randy and Tyrone, and eight completed strands in total for the silver." },
-  { n: 4, title: "Before the Finale", blurb: "Bank the four missable trophies first — the VCIA departure, the showroom escape, the choices, and the second-chance moment — then complete the final mission." },
-  { n: 5, title: "See All of Leonida", blurb: "The collectibles sweep: meditation spots, card sets, WAiNK locations, 100 vehicles, every area explored, all garages bought, and 10 Scooter Bros registrations." },
-  { n: 6, title: "Master the Grind", blurb: "The long activities: 250 stunts, shooting-range golds, drone races, 20 race wins, 50 challenges, 5 bank vaults, the money trophies, and everything left over." },
-  { n: 7, title: "100% and the Platinum", blurb: "Attain 100% completion, and the platinum — Vice Got a Price! — follows automatically once all 54 other trophies are earned." },
+export const KIND_FILTERS = [
+  { id: "all", label: "All 55" },
+  { id: "story", label: "Story" },
+  { id: "missable", label: "Missable" },
+  { id: "collectibles", label: "Collectibles" },
+  { id: "activities", label: "Activities" },
+  { id: "online", label: "Online" },
 ];
 
-// The kind filter includes two pseudo-kinds:
-// - "missable": trophies flagged missable, whatever their real kind.
-// - "online": the launch list contains no online trophies, so this honestly matches nothing.
-export function matchesKind(trophy, kindFilter) {
-  if (kindFilter === "all") return true;
-  if (kindFilter === "missable") return trophy.missable === true;
-  if (kindFilter === "online") return trophy.kind === "online";
-  return trophy.kind === kindFilter;
+export const GRADE_FILTERS = ["all", "platinum", "gold", "silver", "bronze"];
+
+export function matchesKind(trophy, kind) {
+  if (!kind || kind === "all") return true;
+  if (kind === "missable") return trophy.missable === true;
+  if (kind === "online") return trophy.kind === "online";
+  return trophy.kind === kind;
 }
 
-export function filterTrophies(trophies, { search = "", kind = "all", grade = "all" } = {}) {
-  const q = search.trim().toLowerCase();
-  return trophies.filter((t) => {
-    if (!matchesKind(t, kind)) return false;
-    if (grade !== "all" && t.grade !== grade) return false;
-    if (q && !`${t.name} ${t.description}`.toLowerCase().includes(q)) return false;
-    return true;
-  });
+export function matchesGrade(trophy, grade) {
+  if (!grade || grade === "all") return true;
+  return trophy.grade === grade;
 }
 
-// Spoiler rule: with protection ON, an unearned story trophy is masked —
-// no real name, no description, no guide — until it is earned.
-export function isMasked(trophy, earnedSet, spoilerOn) {
-  return Boolean(spoilerOn && trophy.kind === "story" && !earnedSet.has(trophy.id));
+export function matchesSearch(trophy, query) {
+  const needle = (query || "").trim().toLowerCase();
+  if (!needle) return true;
+  const haystack = [trophy.name, trophy.description, trophy.guide, trophy.kind, trophy.grade]
+    .join(" ")
+    .toLowerCase();
+  return haystack.includes(needle);
 }
 
-export function displayTrophy(trophy, earnedSet, spoilerOn) {
-  if (!isMasked(trophy, earnedSet, spoilerOn)) return { ...trophy, masked: false };
-  return {
-    ...trophy,
-    masked: true,
-    displayName: "Hidden story trophy — earn it to reveal",
-    displayDescription: "Hidden story trophy — earn it to reveal",
-    displayGuide: null,
-  };
+export function matchesEarnedState(trophy, earnedOnly, isEarnedFn) {
+  if (!earnedOnly) return true;
+  return isEarnedFn(trophy.name);
+}
+
+export function filterTrophies(trophies, criteria, isEarnedFn) {
+  return trophies.filter(
+    (trophy) =>
+      matchesKind(trophy, criteria.kind) &&
+      matchesGrade(trophy, criteria.grade) &&
+      matchesSearch(trophy, criteria.query) &&
+      matchesEarnedState(trophy, criteria.earnedOnly, isEarnedFn),
+  );
+}
+
+export function countByKind(trophies) {
+  const counts = { all: trophies.length, story: 0, missable: 0, collectibles: 0, activities: 0, online: 0 };
+  for (const trophy of trophies) {
+    if (trophy.kind === "story") counts.story += 1;
+    if (trophy.kind === "collectibles") counts.collectibles += 1;
+    if (trophy.kind === "activities") counts.activities += 1;
+    if (trophy.kind === "online") counts.online += 1;
+    if (trophy.missable === true) counts.missable += 1;
+  }
+  return counts;
+}
+
+export function countByGrade(trophies) {
+  const counts = { platinum: 0, gold: 0, silver: 0, bronze: 0 };
+  for (const trophy of trophies) {
+    if (Object.prototype.hasOwnProperty.call(counts, trophy.grade)) counts[trophy.grade] += 1;
+  }
+  return counts;
+}
+
+export function missableTrophies(trophies) {
+  return trophies.filter((trophy) => trophy.missable === true);
+}
+
+export function isStoryTrophy(trophy) {
+  return trophy.kind === "story";
 }
