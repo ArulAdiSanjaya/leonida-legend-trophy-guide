@@ -2,6 +2,10 @@
 [![rank](https://make.fun/badge/gta6-trophy-guide-01/ArulAdiSanjaya/leonida-legend-trophy-guide/rank.svg)](https://make.fun/bounty/gta6-trophy-guide-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
 [![reward](https://make.fun/badge/gta6-trophy-guide-01/ArulAdiSanjaya/leonida-legend-trophy-guide/reward.svg)](https://make.fun/bounty/gta6-trophy-guide-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
 
+Leonida Legend is an offline guide and tracker for all 55 Grand Theft Auto VI PlayStation 5 trophies.
+It keeps a progress checklist saved in the browser, lays out a clear roadmap to the platinum,
+and flags missable trophies while offering a spoiler-safe mode for story content.
+
 # Leonida Legend — GTA VI Trophy Guide & Tracker
 
 An offline guide and tracker for all **55 official Grand Theft Auto VI
